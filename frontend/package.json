@@ -4,7 +4,7 @@
 
   "private": true,
 
-  "proxy":"https://localhost:10000",
+  "proxy":"http://localhost:10000",
 
   "version": "0.0.0",
 
