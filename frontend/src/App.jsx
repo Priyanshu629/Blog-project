@@ -7,6 +7,7 @@ import Createpost from './components/Createpost'
 import MyPost from './components/MyPost'
 import './index.css'
 
+
 const App = () => {
   return (
    

@@ -14,7 +14,7 @@ const Register = () => {
     alert('all the fileds required')
   }
 
-   axios.post('http://localhost:5000/register',{name,email,password})
+   axios.post('/register',{name,email,password})
    .then((response)=>{
     window.location.href='/'
     console.log(response.status)})

@@ -35,7 +35,7 @@ const Createpost = () => {
     
     axios
       .post(
-        "http://localhost:5000/createpost",
+        "/createpost",
         formdata,
         {
           headers: {

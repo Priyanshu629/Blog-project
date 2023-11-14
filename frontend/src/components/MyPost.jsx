@@ -14,7 +14,7 @@ const MyPost = () => {
     //getting data
     useEffect(()=>{
 
-        axios.get('http://localhost:5000/getpost',{
+        axios.get('/getpost',{
             headers:{
                 "Content-Type":"application/json",
                 "token":token
@@ -49,7 +49,7 @@ else{
            <div key={key}>
             
             <div className="card p-3 mt-3">
-            <img src={`http://localhost:5000/${posts.image}`} width={"60%"} height={"400px"} className="mx-auto" />
+            <img src={`/${posts.image}`} width={"60%"} height={"400px"} className="mx-auto" />
               <div className="card-title">             
                 <h1>{posts.title}</h1>
               </div>

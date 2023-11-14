@@ -13,7 +13,7 @@ const Home = () => {
 
   const handleDelete = (id,imageid) => {
     axios
-      .delete(`http://localhost:5000/deletepost/${id}/${imageid}`, {
+      .delete(`/deletepost/${id}/${imageid}`, {
         headers: {
           "Content-Type": "application/json",
           token: token,
@@ -25,7 +25,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/allpost")
+      .get("/allpost")
       .then((response) => {
         // console.log(response.status)
         setPost(response.data.mypost);
@@ -67,7 +67,7 @@ const Home = () => {
               style={{ backgroundColor: "aqua" }}
             >
               <img
-                src={`http://localhost:5000/${posts.image}`}
+                src={`/${posts.image}`}
                 width={"60%"}
                 height={"400px"}
                 className="mx-auto"

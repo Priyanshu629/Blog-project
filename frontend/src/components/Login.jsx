@@ -17,7 +17,7 @@ const Login = () => {
      return alert('all the fileds required')
     }
     try{
-   let response= await axios.post('http://localhost:5000/login',{name,password},
+   let response= await axios.post('/login',{name,password},
     
    {
     headers:{
