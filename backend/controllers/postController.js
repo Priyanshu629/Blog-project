@@ -1,5 +1,5 @@
 const postModel=require('../models/postModel')
-const {unlink}=require('node:fs')
+const fs=require('fs')
 const path=require('path')
 
 
@@ -77,7 +77,7 @@ console.log(postid,imageid)
    const filePath=path.resolve(`./uploads/${imageid}`)
    console.log(filePath)
   
-  unlink(filePath, (err) => {
+  fs.unlink(filePath, (err) => {
     if (err) throw err;
     console.log('path/file.txt was deleted');
   });
