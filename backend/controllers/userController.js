@@ -51,7 +51,7 @@ const loginUser = async (req, res, next) => {
             JWT_SECRET_KEY,
           
           );
-          res.cookie('token',token,{httpOnly:true,sameSite:"none"});
+         
           
           req.user = token;
           res
